@@ -30,5 +30,11 @@ fi
 workshop_clean_project "${DEV_PROJECT}"
 workshop_clean_project "${STAGING_PROJECT}"
 
+# ACME: the Shipwright exercise in acme-<user>. Shipwright runs each build as a Tekton TaskRun,
+# which stays when its BuildRun is deleted; it keeps the build pod.
+info "Deleting the ACME Hello resources in acme-${WORKSHOP_USER}"
+oc delete buildruns.shipwright.io,taskruns.tekton.dev,builds.shipwright.io,deployment,service,route,imagestream \
+  --all -n "acme-${WORKSHOP_USER}" --ignore-not-found > /dev/null 2>&1
+
 oc project "${DEV_PROJECT}" > /dev/null 2>&1
 ok "Cleanup done: ${DEV_PROJECT} and ${STAGING_PROJECT} no longer contain Coolstore resources"

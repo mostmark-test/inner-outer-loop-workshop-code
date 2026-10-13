@@ -185,3 +185,9 @@ commands:
       component: workshop-tools
       workingDir: /projects/workshop
       commandLine: './.tasks/openshift_cleanup.sh'
+  - id: acme---build-with-shipwright
+    exec:
+      label: ACME - Build with Shipwright
+      component: workshop-tools
+      workingDir: /projects/workshop/.tasks
+      commandLine: '. ./workshop-env.sh && ./acme_build_shipwright.sh'
