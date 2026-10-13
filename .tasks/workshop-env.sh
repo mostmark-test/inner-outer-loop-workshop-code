@@ -29,7 +29,7 @@ GITEA_URL="${GITEA_URL%/}"
 export ARGOCD_SERVER="${ARGOCD_SERVER:-argocd-server.argocd.svc}"
 export ARGOCD_OPTS="${ARGOCD_OPTS:---plaintext}"
 export MAVEN_MIRROR_URL="${MAVEN_MIRROR_URL:-http://nexus.nexus.svc:8081/repository/maven-all-public/}"
-export CODE_REPO_URL="${CODE_REPO_URL:-https://github.com/mostmark/inner-outer-loop-workshop-code.git}"
+export CODE_REPO_URL="${CODE_REPO_URL:-https://github.com/mostmark-test/inner-outer-loop-workshop-code.git}"
 export CODE_REPO_REVISION="${CODE_REPO_REVISION:-main}"
 
 # Git identity (the chart sets it; needed when the scripts commit)

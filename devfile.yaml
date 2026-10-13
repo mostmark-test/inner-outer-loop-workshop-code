@@ -9,7 +9,7 @@ projects:
       checkoutFrom:
         revision: main
       remotes:
-        origin: 'https://github.com/mostmark/inner-outer-loop-workshop-code.git'
+        origin: 'https://github.com/mostmark-test/inner-outer-loop-workshop-code.git'
 components:
   - name: workshop-tools
     attributes:

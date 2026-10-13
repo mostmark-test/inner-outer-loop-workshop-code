@@ -38,12 +38,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mostmark/inner-outer-loop-workshop-code.git"
+    "url": "git+https://github.com/mostmark-test/inner-outer-loop-workshop-code.git"
   },
   "bugs": {
-    "url": "https://github.com/mostmark/inner-outer-loop-workshop-code/issues"
+    "url": "https://github.com/mostmark-test/inner-outer-loop-workshop-code/issues"
   },
-  "homepage": "https://github.com/mostmark/inner-outer-loop-workshop-code#readme",
+  "homepage": "https://github.com/mostmark-test/inner-outer-loop-workshop-code#readme",
   "devDependencies": {
     "js-yaml": "~3.13.1",
     "nodeshift": "~3.0.0",
