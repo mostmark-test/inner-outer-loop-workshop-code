@@ -5,6 +5,8 @@
 #   - deletes the Coolstore resources in my-project-<user> and cn-project-<user>
 #     (the projects themselves are pre-created by the workshop and are kept),
 #   - deletes the participant's Argo CD Applications <svc>-<user> (without cascading).
+#   - deletes the participant's Argo CD Applications <svc>-<user> (without cascading),
+#   - deletes the ACME Hello build and deployment in acme-<user>.
 # Gitea repositories are kept; the fast-forward scripts re-create the ones they need.
 #
 # Usage: openshift_cleanup.sh [USER]   (default: the workspace user)
